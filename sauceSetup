@@ -1,0 +1,36 @@
+
+
+Sauce Labe real device Testing scripts 
+
+
+
+1) upload app to central storage loaction like github,sacuce server etc
+
+		- If using GIT - create repo
+						- go to release 
+						- upload apk 
+						- hover over package 
+						- get url :: 
+ app = =https://github.com/ankur1233/appStore/releases/download/1/Aapoon_v25.1.apk
+ 
+ 
+ 2) 
+ 
+  capabilities.setCapability("username", "****************");
+        capabilities.setCapability("accessKey", "*******************");
+        capabilities.setCapability("app", "https://github.com/ankur1233/appStore/releases/download/1/Aapoon_v25.1.apk");
+     
+        capabilities.setCapability("Appium Endpoint", "https://ondemand.us-west-1.saucelabs.com/wd/hub");
+		
+		        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, PLATFORM_VERSION);
+        
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+        
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
+		
+		
+		
+		3) device name and version can be seen through this link
+				- https://app.saucelabs.com/live/app-testing#device-selection
+				device name and section
+
